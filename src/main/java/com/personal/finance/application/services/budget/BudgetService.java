@@ -1,4 +1,8 @@
 package com.personal.finance.application.services.budget;
 
-public class BudgetService {
-}
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class BudgetService { }

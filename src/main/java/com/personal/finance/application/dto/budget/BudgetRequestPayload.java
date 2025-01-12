@@ -1,4 +1,3 @@
 package com.personal.finance.application.dto.budget;
 
-public record BudgetRequestPayload() {
-}
+public record BudgetRequestPayload(String category, Double maximumSpend, String theme) { }

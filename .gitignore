@@ -1,0 +1,57 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+target/
+
+# Spring Boot specific
+*.log
+*.pid
+*.swp
+*.swo
+.DS_Store
+
+# IDE-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# OS files
+ehthumbs.db
+*.bak
+*.swp
+
+# Database files
+*.db
+*.sql
+*.sqlite
+*.h2.db
+
+# Local development environment files
+*.env
+*.env.local
+
+# Junit output files
+/test-*
+
+# Application logs
+logs/
+log/

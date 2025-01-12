@@ -1,9 +1,19 @@
-package com.personal.finance.domain.entities.budget;
+package com.personal.finance.infrastructure.persistence.entities.budget;
 
+import com.personal.finance.application.dto.budget.BudgetRequestPayload;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.UUID;
 
+@Table(name = "budgets")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Budget {
     @Id
@@ -18,4 +28,10 @@ public class Budget {
 
     @Column(nullable = false)
     private String theme;
+
+    public Budget(BudgetRequestPayload data) {
+        this.category = data.category();
+        this.maximumSpend = data.maximumSpend();
+        this.theme = data.theme();
+    }
 }
