@@ -20,12 +20,10 @@ public class FinanceApplication {
 			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 				Desktop.getDesktop().browse(new URI(swaggerUrl));
 			} else {
-				System.out.println("Navegador não suportado para abrir automaticamente: " + swaggerUrl);
+				System.out.println("Browser not supported to open automatically: " + swaggerUrl);
 			}
 		} catch (Exception e) {
-			System.err.println("Erro ao abrir o Swagger UI: " + e.getMessage());
+			System.err.println("Error to open the Swagger UI: " + e.getMessage());
 		}
 	}
 }
-
-// 08:45
